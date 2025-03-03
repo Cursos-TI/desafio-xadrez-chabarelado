@@ -6,16 +6,66 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
+    // Variáveis inicializadas:
+    int torre = 0, bispo = 0, rainha = 0;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Saída informando a peça que esta se movimentando:
+    printf("\n-> Torre se move para:\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // Movimentação da torre horizontalmente para direita (5 casas):
+    for (; torre <= 5; torre++) {
+        printf("> Direita\n");
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("-------------------\n"); // Separação da movimentação
+
+    // Movimentação da torre verticalmente para a cima (5 casas):
+    for (torre = 0; torre <= 5; torre++) { // Inicializando novamente o valor da variável para executar o código.
+        printf("> Cima\n");
+    }
+    
+    // Saída informando a peça que esta se movimentando:
+    printf("\n-> Bispo se move para:\n");
+
+    // Movimentação do bispo para diagnonal direita (5 casas):
+    while (bispo <= 5)
+    {
+        printf("> Cima, direita.\n");
+        bispo ++;
+    }
+
+    printf("-------------------\n"); // Separação da movimentação
+    
+    // Movimentação do bispo para diagonal esquerda (5 casas):
+    bispo = 0; // Inicializando novamente o valor da variável para executar o código.
+
+    while (bispo <= 5)
+    {
+        printf("> Cima, Esquerda.\n");
+        bispo ++;
+    }
+
+    // Saída informando a peça que esta se movimentando:
+    printf("\n-> Rainha se move para:\n");
+
+    // Movimentação da rainha para esquerda ( 8 casas):
+    do {
+        printf("> Esquerda\n");
+        rainha ++;
+    } while (rainha <= 8); 
+  
+    printf("-------------------\n"); // Separação da movimentação
+
+    // Movimentação da rainha para direita ( 8 casas):
+    rainha = 0; // Inicializando novamente o valor da variável para executar o código.
+    do {
+        printf("> Direita\n");
+        rainha ++;
+    } while (rainha <= 8); 
+
+    return 0;
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
