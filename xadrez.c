@@ -7,8 +7,10 @@
 int main() {
     // Nível Novato - Movimentação das Peças
     
+    // Nível Aventureiro - Movimentação do Cavalo
+    
     // Variáveis inicializadas:
-    int torre = 0, bispo = 0, rainha = 0;
+    int torre = 0, bispo = 0, rainha = 0, cavalo = 1;
 
     // Saída informando a peça que esta se movimentando:
     printf("\n-> Torre se move para:\n");
@@ -64,12 +66,30 @@ int main() {
         rainha ++;
     } while (rainha <= 8); 
 
-    return 0;
+    // Saída informando a peça que esta se movimentando:
+    printf("\n-> Cavalo se move para:\n");
 
+    // Movimentação do cavalo para cima e para esquerda:
+    for (; cavalo != 0; cavalo--)
+    {
+        for (int i = 0; i <= 2; i++)
+        {
+            printf("> Cima\n"); 
+        }
+        printf("> Esquerda\n");
+    }
+    
+    printf("-------------------\n"); // Separação da movimentação
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Movimentação do cavalo para cima e para direita:
+    for (cavalo = 1; cavalo != 0; cavalo--)
+    {
+        for (int i = 0; i <= 2; i++)
+        {
+            printf("> Cima\n");
+        }
+        printf("> Direita\n");
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
