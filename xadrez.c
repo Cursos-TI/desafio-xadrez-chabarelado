@@ -97,7 +97,7 @@ int main(){
         
         printf("> Direita\n"); // Se move uma vez
 
-        if (cavalo == 1) break;
+        if (cavalo == 1) break; // Se igual a 1 casa, finaliza
     }
     return 0;
 }
