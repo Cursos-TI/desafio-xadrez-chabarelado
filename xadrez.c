@@ -93,7 +93,7 @@ int main(){
             printf("> Cima\n"); // Se move duas vezes
         }
 
-        if (cavalo <= 0) continue;
+        if (cavalo <= 0) continue; // Caso menor que 0 casa, se move
         
         printf("> Direita\n"); // Se move uma vez
 
