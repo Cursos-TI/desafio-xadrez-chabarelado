@@ -36,6 +36,7 @@ void movimentoTorre_direita(int casas) {  // Movimento para direita
     }
 }
 
+
 // Função recursiva do movimento do BISPO:
 void movimentoBispo_direita(int casasCima, int casasDireita) { // Movimento para diagonal direita
     while (casasCima > 0 )  
